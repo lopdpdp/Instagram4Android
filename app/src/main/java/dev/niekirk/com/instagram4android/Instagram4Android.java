@@ -56,7 +56,7 @@ public class Instagram4Android {
     @Getter
     protected boolean isLoggedIn;
 
-    @Getter
+    @Getter @Setter
     private String uuid;
 
     @Getter @Setter
@@ -71,6 +71,7 @@ public class Instagram4Android {
     @Getter
     protected OkHttpClient client;
 
+    @Getter @Setter
     private final HashMap<String, Cookie> cookieStore = new HashMap<>();
 
     @Builder
